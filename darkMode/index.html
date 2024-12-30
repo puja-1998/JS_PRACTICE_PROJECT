@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Mode</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      transition: background-color 0.5s;
+      font-family: Arial, sans-serif;
+      margin-top: 50px ;
+    }
+    h1{
+        font-size: 80px;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;     
+    }
+    .toggle-button {
+      cursor: pointer;
+      width: 110px;
+      height: 60px;
+      background-color: black;
+      border-radius: 30px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+      box-sizing: border-box;
+    }
+    .toggle-button .icon {
+      width: 40px;
+      height: 40px;
+    }
+    .toggle-button .toggle-circle {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      transition: transform 0.5s;
+    }
+    .dark-mode .toggle-circle {
+      transform: translateX(60px);
+    }
+    .dark-mode {
+      background-color: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toggle-button" onclick="toggleMode()">
+    <img src="https://cdn-icons-png.flaticon.com/128/11457/11457488.png" class="icon sun-icon" alt="Sun">
+    <img src="https://cdn-icons-png.flaticon.com/128/7645/7645197.png" class="icon moon-icon" alt="Moon">
+    <div class="toggle-circle"></div>
+  </div>
+  <h1>Click on the Toggle Button</h1>
+  
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
