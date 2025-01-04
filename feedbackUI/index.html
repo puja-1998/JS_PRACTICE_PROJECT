@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback UI</title>
+    <style>
+        body{
+            background-color: #E0FFFF;
+            height: 100vh;
+            width: 100vw;
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .feedback{
+            display:flex ;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            height: 300px;
+            width: 450px;
+            background-color: #E9FFFF;
+            box-shadow: 0px 4px 4px 2px #abe2e2;
+            border-radius: 10px;
+        }
+        .ratings{
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            
+        }
+        h1, p{
+            color: #006400;
+        }
+        .rating{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            height: 90PX;
+            width: 120PX;
+            font-size: 16.67px;
+            cursor: pointer;
+        }
+        
+        .rating:hover,
+        .rating.active
+        {
+            background: darkseagreen;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: all 300ms ease;
+        }
+        
+        button{
+            height: 40px;
+            width: 130px;
+            background-color: #008B8B;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            
+        }
+        
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+            box-shadow: 0 2px 10px #008B8B;
+            color: #8b2000;
+        }
+    </style>
+</head>
+<body>
+    <div class="feedback" id="container">
+        <h1>Feedback UI</h1>
+        <div class="ratings">
+            <div id="Unhappy" class="rating">
+                <img src="https://cdn-icons-png.flaticon.com/512/166/166527.png" height="40px" width="40px" alt="">
+                <p>Unhappy</p>
+            </div>
+            <div id="Netural"class="rating" >
+                <img src="https://cdn-icons-png.flaticon.com/512/1791/1791385.png" height="40px" width="40px" alt="">
+                <p>Netural</p>
+            </div>
+            <div id="Satisfied" class="rating">
+                <img src="https://cdn-icons-png.flaticon.com/512/166/166538.png" height="40px" width="40px" alt="">
+                <p>Satisfied</p>
+            </div>
+        </div>
+        <button id="btn">Send Review</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
