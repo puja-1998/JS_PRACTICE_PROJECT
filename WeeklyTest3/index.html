@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Test - 3</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+        }
+        .product{
+            height: 300px;
+            width: 400px;
+            border: 6px solid #A6A6A6;
+            
+        }
+        .parentCart{
+            height: 300px;
+            width: 250px;
+            border: 6px solid #A6A6A6;
+            
+        }
+        h2{
+            text-align: center;
+        }
+        .btns{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 2px solid black;
+            padding: 5px 20px;
+            background-color: #3B93A9;
+            border-radius: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <h2>Products</h2>
+        </div>
+        <div class="parentCart">
+            <h2>Cart</h2>
+            <div class="cart">
+                <p id="cart-message">No Product added to the cart</p>
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
