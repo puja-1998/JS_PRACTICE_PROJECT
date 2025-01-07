@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Search</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    h1{
+        font-size: 50px;
+    }
+    body{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFDFBB;
+        flex-wrap: wrap;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 25px;
+        overflow-x: hidden;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .searchBtns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .btn{
+        height: auto;
+        width: fit-content;
+        padding: 10px;
+        background-color: #FDBB8F;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .searchDiv{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        height: 35px;
+        width: 250px;
+        background-color: white;
+        border-radius: 30px;
+    }
+    input{
+        height: 30px;
+        width: 200px;
+        border: none;
+        outline: none;
+    }
+    .btn:hover{
+        background-color:#ee9051 ;
+    }
+    #display-emoji{
+        margin: 0 10px;
+    }
+    #display-emoji{
+    margin: 0px 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Emojee - Emoji 🔍 Application</h1>
+        <div class="searchBtns">
+            <div class="filter-emoji">
+                <button class="btn" id="allbtn">All</button>
+                <button class="btn" id="face">Face</button>
+                <button class="btn" id="heart">Heart</button>
+                <button class="btn" id="book">Book</button>
+                <button class="btn" id="hand">Hand</button>
+                <button class="btn" id="sports">Sports</button>
+                <button class="btn" id="flag">Flag</button>
+            </div>
+            
+            <div class="searchDiv">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" class="search" placeholder="Search Emoji...">
+            </div>
+        </div>
+        <div id="display-emoji"></div>
+    </div>
+
+    <script src="./emojiList.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
