@@ -6,7 +6,14 @@ let inputDiv = document.querySelector(".inputdiv");
 let dataList = [];
 addPlayer.addEventListener('click', (e) => {
 
-    
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero-indexed
+    const year = today.getFullYear();
+
+    const formattedDate = `${day}-${month}-${year}`;
+
+    today.toISOString().split('T')[0];
     let fname = document.querySelector("#fname").value;
     let lname = document.querySelector("#lname").value;
     let country = document.querySelector("#country").value;
@@ -22,7 +29,9 @@ addPlayer.addEventListener('click', (e) => {
     inputDiv.classList.add("inputdiv1");
     
         let addDetails = document.createElement("div");
+        let nameDiv = document.createElement("div")
         let nameTag = document.createElement("p");
+        let dateTag = document.createElement("p");
         let countryTag = document.createElement("p");
         let scoreTag =  document.createElement("p");
        
@@ -38,7 +47,12 @@ addPlayer.addEventListener('click', (e) => {
         incbtn.innerText = "+5";
         decbtn.innerText = "-5";
 
-        addDetails.appendChild(nameTag);
+        dateTag.innerText=formattedDate;
+
+        nameDiv.appendChild(nameTag);
+        nameDiv.appendChild(dateTag);
+
+        addDetails.appendChild(nameDiv);
         addDetails.appendChild(countryTag);
         addDetails.appendChild(scoreTag);
         addDetails.appendChild(imgTag);
@@ -107,6 +121,10 @@ addPlayer.addEventListener('click', (e) => {
         
         imgTag.addEventListener('click',()=>{
             addDetails.remove();
+            // if(inputDiv.innerHTML == ""){
+            //     inputDiv.classList.remove("inputdiv1");
+            // }
+            
         })
 
         // const sortData = () => {
@@ -125,4 +143,7 @@ addPlayer.addEventListener('click', (e) => {
             });
         }
 });
+
+
+
 
