@@ -121,12 +121,16 @@ addPlayer.addEventListener('click', (e) => {
         
         imgTag.addEventListener('click',()=>{
             addDetails.remove();
-            // if(inputDiv.innerHTML == ""){
-            //     inputDiv.classList.remove("inputdiv1");
-            // }
+            dataList = dataList.filter(player => player.element !== addDetails);
+            dataList = dataList.filter(player => player.element !== addDetails);
+            sortByScore();
+            if(inputDiv.innerHTML == ""){
+                inputDiv.classList.remove("inputdiv1");
+            }
             
         })
 
+        sortByScore();
         // const sortData = () => {
         //     dataList.sort((a, b) => {
         //         return b.score - a.score;
