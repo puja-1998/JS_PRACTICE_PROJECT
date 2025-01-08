@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Project</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             gap: 20px;
+        }
+        
+        h1{
+            font-size: 70px;
+            font-weight: 700;
+        }
+        .container{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             gap: 20px;
+        }
+
+        .btns{
+            display: flex;
+            gap: 20px;
+        }
+
+        .SearchByName{
+
+        }
+        button{
+            height: 20px;
+            width: fit-content;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .cards{
+            height: 300px;
+            width: 200px;
+            background-color: aqua;
+            box-shadow: 2px 5px 5px 2px gray ;
+            transition: transform 1s; 
+        }
+        .cards:hover{
+            cursor: pointer;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>GeeksterMon</h1>
+        <div class="container">
+            <div class="btns">
+                <select name="type" id="type">
+                    <option value="Types">Types</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Water">Water</option>
+                    <option value="Bug">Bug</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Ground">Ground</option>
+                    <option value="Fairy">Fairy</option>
+                    <option value="Fighting">Fighting</option>
+                    <option value="Psycsic">Psycsic</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Dragon">Dragon</option>
+                </select>
+                    <button>Filter By Type</button>
+                    <button>Reset</button>
+            </div>
+            <div class="SearchByName">
+                <input type="text" placeholder="Enter Pokemon Name" id="inputName">
+            </div>
+            <div class="cards"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
