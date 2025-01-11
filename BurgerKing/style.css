@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #F8F1E7;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 0 40px;
+    font-family: 'Times New Roman';
+    font-size:  24px;
+    font-weight: bolder;
+}
+.account{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.cartbtn{
+    height: 30px;
+    width: 150px;
+    background-color: #D62300;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin: 10px 40px;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.orderbtn{
+    height: 50px;
+    width: 300px;
+    background-color: #D62300;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    cursor: pointer;
+}
+.order h1{
+    font-size: 60px;
+}
+
+.food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.checkDiv{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;    
+}
+
+.img{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.pTag{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    background-color: #D62300;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
