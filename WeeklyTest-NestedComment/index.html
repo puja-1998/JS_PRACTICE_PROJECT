@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Comment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <i class="material-icons">chevron_left</i>  
+                    <img src="./logo.png" alt="logo" height="40px" width="40px">
+                </div>
+                <div class="title">
+                    Nested Comments
+                </div>
+                <div class="logo">
+                    <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='currentColor'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='lucide%20lucide-code-xml'%3e%3cpath%20d='m18%2016%204-4-4-4'/%3e%3cpath%20d='m6%208-4%204%204%204'/%3e%3cpath%20d='m14.5%204-5%2016'/%3e%3c/svg%3e" alt="">
+                    <img height="30px" width="30px" src="https://sadanandpai.github.io/frontend-mini-challenges/javascript/assets/github-KMwwOUMo.svg" alt="">
+                </div>
+            </div>
+        </header>
+        <div class="container">
+          <div id="commentContainer">
+            <div class="reset-wrapper">
+              <button class="btn btn-primary" id="reset">Reset</button>
+            </div>
+            <div class="sub-comments"></div>
+          </div>
+        </div>
+    
+        <template id="comment-template">
+          <div class="comment-wrapper">
+            <div class="main-comment">
+              <img
+                src="https://icon-library.com/images/anonymous-icon/anonymous-icon-28.jpg"
+                alt="profile"
+                class="profile-pic"
+                loading="lazy"
+              />
+    
+              <div class="content">
+                <div class="header">
+                  <input type="text" class="username-input hide" placeholder="User name" />
+                  <div class="user-info hide">
+                    <h3 class="username"></h3>
+                  </div>
+                </div>
+    
+                <p class="comment-text"></p>
+    
+                <div class="footer">
+                  <button class="reply hide">Reply</button>
+                  <button class="edit hide">Edit</button>
+                  <button class="cancel hide">Cancel</button>
+                  <button class="submit hide">Post</button>
+                  <button class="delete hide">Delete</button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="sub-comments"></div>
+          </div>
+        </template>
+    
+        <script src="./script.js"></script>
+      </body>
+</body>
+</html>
