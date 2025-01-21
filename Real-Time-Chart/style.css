@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+canvas{
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(255, 242, 127);
+}
+.mydiv{
+    width: 80%; 
+    margin:50px auto;
+   
+}

@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgb(231, 231, 179);
+    max-width: 600px;
+    margin: 50px auto;
+}
